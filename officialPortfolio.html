@@ -1,10 +1,13 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <title>Urihel Portfolio</title>
-    
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Quicksand:300');
+    </style>
+
 </head>
 <body>
     <div id="container">
@@ -50,10 +53,10 @@
         function mainList() {
             navList.appendChild(ul);
             console.log(container);
-            ul.style.border = "2px solid black";
+            //ul.style.border = "2px solid black";
             ul.style.height = "50px";
-            ul.style.width = "600px";
-            ul.style.margin = "0 auto";
+            ul.style.width = "25%";
+            ul.style.marginLeft = "70%";
             ul.style.marginTop = "10.5px";
 
         }
@@ -61,7 +64,7 @@
 
         function addList() {
             // the loop that creates the list
-            for (i = 0; i < 4; i = i+=1) {
+            for (i = 0; i < 4; i+=1) {
                 var li = document.createElement("li");
                 var a = document.createElement("a");
                 listName = ["Home", "About", "Projects", "Contact"];
@@ -72,15 +75,21 @@
                 ul.appendChild(li);
                 li.appendChild(a);
 
-                //css for the nav bar
-                li.style.color = "green";
-                li.style.float = "left";
+                //List Item CSS file 
 
-                
-               
+                //List Item CSS file Designed on Javascipt
+                //CSS is attached to a for loop which 
+                li.style.marginLeft = "5px";
+                li.style.marginTop = "10px";
+                //li.style.border = "1px solid black";
+                li.style.listStyleType = "none";
+                li.style.float = "left";
+                //Anchor Tag CSS file Design on Javascript
+                a.style.textDecoration = "none";
+                a.style.color = "gray";
+                a.style.fontSize = "20px";
+                a.style.fontFamily = "\'Quicksand\', sans-serif";
             }   
-           
-           
         }
         addList();
 
