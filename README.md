@@ -1,6 +1,6 @@
 # Project-Portfolio
-Just a portfolio i am build with raw javaScript to host all my projects
-the portfolio im building is part of a project from udacity's front end web developer nano degree 
-please dont judge this just yet. I'm contributing to it daily and hopefully it will be up and running soon. 
-for now the js code i have implemented assigns a few function which append ul,li,a. as of right now im still in the works for desiging 
-this section. 
+Just a portfolio I'm building with raw javaScript to host all my projects.
+the purpose of the project onmy end is to challenge myself with javaScript. 
+This is also a project i hope to submit for the Udacity Front-end Web developer nano so i do expect to put some effort into it.
+When its up and running ill let you know and i hope to hear see some critque from you later on. 
+
