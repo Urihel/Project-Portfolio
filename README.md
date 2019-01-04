@@ -1,6 +1,3 @@
 # Project-Portfolio
-Just a portfolio I'm building with raw javaScript to host all my projects.
-the purpose of the project onmy end is to challenge myself with javaScript. 
-This is also a project i hope to submit for the Udacity Front-end Web developer nano so i do expect to put some effort into it.
-When its up and running ill let you know and i hope to hear see some critque from you later on. 
+Just a portfolio I'm building to showcase the projects i have had a chance to build including this website. As of right now, it's still in the works. so don't judge. basically the web document i writing has 4 sections a home, aboutme, projects, contact. when i full complete a page ill update you on what i did to clean up my doc. 
 
