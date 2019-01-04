@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Urihel's Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Quicksand:300');
+
+        #nav-bar {
+            /*border: 2px solid black;*/
+        }
+
+        #tag {
+            /*border: 1px solid black;*/
+            float: left;
+            list-style-type: none;
+            margin: 10px 10px 10px 10px;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 100;
+            font-size: 18px;
+        }
+
+        #imgBody {
+            border: 2px outset gray;
+            height: 400px;
+            width: 100%;
+        }
+        #image {
+            border: 2px outset black;
+            float:left;
+            height: 300px;
+            margin-top: 50px;
+            margin-left: 50px;
+            width: 300px;
+        }
+        #para1 {
+            border: 1px solid black;
+            color: lightskyblue;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 18px;
+            height: 300px;
+            margin-left: 5%;
+            margin-top: 50px;
+            text-align: justify;
+            text-indent: 50px;
+            width: 900px;
+            float: left;
+        }
+            #para1:hover {
+                color: gray;
+            }
+
+        /*CSS organized by selectors*/
+        a {
+            color: #E1E1E1;
+            text-decoration: none;
+        }
+
+            a:hover {
+                color: #FEA8FC;
+            }
+       
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <!------------------>
+        <div id="nav-bar">
+            <!--look at javaScript line 44-->
+            <div id="nav-list"></div>
+        </div>
+
+        <div id="imgBody">
+            <!--look at javascipt line 141-155  -->
+        </div>
+
+        </div>
+
+        <script>
+            var imgBody = document.getElementById("imgBody");
+            var container = document.getElementById("container");
+            var navBarHeader = document.getElementById("nav-bar");
+            var navList = document.getElementById("nav-list");
+            var ul = document.createElement("ul");
+            var anchorTag = document.createElement("a");
+
+
+            function mainBoxElement() {
+                //functions lets us know that container exists in the console.
+                console.log(container);
+            }
+            mainBoxElement();
+            //function we use to design the nav-bar-header
+            function nav_Header() {
+                //navBarHeader.style.border = "2px solid black";
+                //console.log(navBarHeader.style.border);
+                navBarHeader.style.height = "75px";
+                //console.log(navBarHeader.style.height);
+                navBarHeader.style.width = "100%";
+                //console.log(navBarHeader.style.width);
+            }
+            nav_Header();
+
+            //The function that allows us to create <li>'s 
+            function mainList() {
+                navList.appendChild(ul);
+                console.log(container);
+                //ul.style.border = "2px solid black";
+                ul.style.height = "50px";
+                ul.style.width = "42%";
+                ul.style.marginLeft = "50%";
+                ul.style.marginTop = "10.5px";
+
+            }
+            mainList();
+
+            function addList() {
+
+
+                // the loop that creates the list
+                for (i = 0; i < 4; i += 1) {
+
+                    var li = document.createElement("li");
+                    var a = document.createElement("a");
+                    listName = ["Home", "About", "Projects", "Contact"];
+                    a.textContent = listName[i];
+                    li.id = "tag";
+                    //This where connect all the other pages too.
+                    a.href = "";
+                    ul.appendChild(li);
+                    li.appendChild(a);
+
+                }
+
+            }
+            addList();
+
+            //this function creates an img tag inside the imgBody. css for the img element is handled in css. 
+            function imageBody () {
+                var img = document.createElement("img");
+                img.id = "image";
+                imgBody.appendChild(img);
+            }
+            imageBody();
+
+            function addAbout() {
+                var aboutMe = document.createElement("p");
+                aboutMe.id = "para1";
+                imgBody.appendChild(aboutMe);
+                aboutMe.innerText = "Sup guys! It's me Urihel again! I want to welcome you to About Me. This section is designed specifically to illustrate \"why I got into coding ? \" and \"what I'm doing with it?\". In addition, I hope to show off my complete self-taught educational background and how I'm now pursuing a CS degree at De Anza College.";
+                
+            }
+            addAbout();
+        </script>
+</body>
+</html>
