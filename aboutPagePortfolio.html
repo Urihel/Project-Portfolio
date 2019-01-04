@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Urihel's Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Quicksand:300');
+        #nav-bar {
+            /*border: 2px solid black;*/
+        }
+
+        #tag {
+            /*border: 1px solid black;*/
+            float: left;
+            list-style-type: none;
+            margin: 10px 10px 10px 10px;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 100;
+            font-size: 18px;
+        }
+
+        #imgBody {
+            border: 2px outset gray;
+            height: 400px;
+            width: 100%;
+        }
+        #image {
+            border: 2px outset black;
+            float:left;
+            height: 300px;
+            margin-top: 50px;
+            margin-left: 50px;
+            width: 300px;
+        }
+        #para1 {
+            border: 1px solid black;
+            color: lightskyblue;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 18px;
+            height: 300px;
+            margin-left: 5%;
+            margin-top: 50px;
+            text-align: justify;
+            text-indent: 50px;
+            width: 900px;
+            float: left;
+        }
+            #para1:hover {
+                color: #FEA8FC;
+            }
+        a {
+            color: #E1E1E1;
+            text-decoration: none;
+        }
+
+            a:hover {
+                color: #FEA8FC;
+            }
+       
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <!------------------>
+        <div id="nav-bar">
+            <!--look at javaScript line 44-->
+            <div id="nav-list"></div>
+        </div>
+
+        <div id="imgBody">
+            <!--look at javascipt line-->
+        </div>
+
+        </div>
+
+        <script>
+            var imgBody = document.getElementById("imgBody");
+            var container = document.getElementById("container");
+            var navBarHeader = document.getElementById("nav-bar");
+            var navList = document.getElementById("nav-list");
+            var ul = document.createElement("ul");
+            var anchorTag = document.createElement("a");
+
+
+            function mainBoxElement() {
+                //functions lets us know that container exists in the console.
+                console.log(container);
+            }
+            mainBoxElement();
+            //function we use to design the nav-bar-header
+            function nav_Header() {
+                //navBarHeader.style.border = "2px solid black";
+                //console.log(navBarHeader.style.border);
+                navBarHeader.style.height = "75px";
+                //console.log(navBarHeader.style.height);
+                navBarHeader.style.width = "100%";
+                //console.log(navBarHeader.style.width);
+            }
+            nav_Header();
+
+            //The function that allows us to create <li>'s 
+            function mainList() {
+                navList.appendChild(ul);
+                console.log(container);
+                //ul.style.border = "2px solid black";
+                ul.style.height = "50px";
+                ul.style.width = "42%";
+                ul.style.marginLeft = "50%";
+                ul.style.marginTop = "10.5px";
+
+            }
+            mainList();
+
+            function addList() {
+
+
+                // the loop that creates the list
+                for (i = 0; i < 4; i += 1) {
+
+                    var li = document.createElement("li");
+                    var a = document.createElement("a");
+                    listName = ["Home", "About", "Projects", "Contact"];
+                    a.textContent = listName[i];
+                    li.id = "tag";
+                    //This where connect all the other pages too.
+                    a.href = "";
+                    ul.appendChild(li);
+                    li.appendChild(a);
+
+                }
+
+            }
+            addList();
+
+            //this function creates an img tag inside the imgBody. css for the img element is handled in css. 
+            function imageBody () {
+                var img = document.createElement("img");
+                img.id = "image";
+                imgBody.appendChild(img);
+            }
+            imageBody();
+
+            function addAbout() {
+                var aboutMe = document.createElement("p");
+                aboutMe.id = "para1";
+                imgBody.appendChild(aboutMe);
+                aboutMe.innerText = "In this section of the page i hope i can have a chance to share my story about how i got started with coding.In addition, I will share with you what has turned of my coding journey since i began, what educational approaches i have taken, and what im doing with coding. For starters I began coding 1 year ago from today.for me switch over to coding meant i would be leaving behind a decades worth of professional sales as well as retail sales experience  for good.one night while i was deciding what step to take next in my life and career one of my family members had suggested to me if a career was really important why not try to web design.I was all ears as usual.I was so opened minded at the time that it didn't take me time to reasearch what programming was and where to begin. Procrastination was not in the equation.";
+                
+            }
+            addAbout();
+        </script>
+</body>
+</html>
