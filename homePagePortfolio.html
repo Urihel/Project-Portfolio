@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Urihel Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Quicksand:300');
+         
+            
+        
+        #nav-bar {
+            /*border: 2px solid black;*/
+            
+
+        }
+        #tag {
+            /*border: 1px solid black;*/
+            float: left;
+            list-style-type: none;
+            margin: 10px 10px 10px 10px;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 18px;
+            
+        }
+        #homePageContent {
+            border: 2px solid black;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 17px;
+            margin: 10px 100px;
+            text-align: justify;
+        }
+        a {
+            color: #E1E1E1;
+            text-decoration: none;
+        }
+            a:hover {
+                color: #FEA8FC;
+            }
+    body { 
+        background-image: url("c1.staticflickr.com/1/858/43054222425_adfb0b8957_k.jpg"); 
+        background-size: auto; 
+
+    }
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <!------------------>
+        <div id="nav-bar">
+            <!--look at javaScript line 44-->
+            <div id="nav-list"></div>
+        </div>
+        <div id="homePageContent">
+            Hi! Everyone my name is Urihel Coleman, and Welcome to my coding portfolio! Yeah! I'm excited about this.
+            Why? Because this means i'm finally developing real stuff guys! that's why, and I'm having fun doing it. 
+            Infact
+            Im having so much fun doing it i decided to designed a coding portfolio to share with you the projects I've 
+            worked on
+            and some code that made it all work together. In addition, i'll dive into how i got started with coding 
+            what has it become to me and what i hope to accomplish with it. 
+        </div>
+        <!------------------>
+    </div>
+   
+
+
+    <script> 
+        var container = document.getElementById("container");
+        var navBarHeader = document.getElementById("nav-bar");
+        var navList = document.getElementById("nav-list");
+        var ul = document.createElement("ul");
+        
+        var anchorTag = document.createElement("a");
+        
+
+        function mainBoxElement() {
+            //functions lets us know that container exists in the console.
+            console.log(container);
+        }
+        mainBoxElement();
+        //function we use to design the nav-bar-header
+        function nav_Header () {
+            //navBarHeader.style.border = "2px solid black";
+            //console.log(navBarHeader.style.border);
+            navBarHeader.style.height = "75px";
+            //console.log(navBarHeader.style.height);
+            navBarHeader.style.width = "100%";
+            //console.log(navBarHeader.style.width);
+            
+            
+           
+        }
+        nav_Header();
+
+        //The function that allows us to create <li>'s 
+        function mainList() {
+            navList.appendChild(ul);
+            console.log(container);
+            //ul.style.border = "2px solid black";
+            ul.style.height = "50px";
+            ul.style.width = "42%";
+            ul.style.marginLeft = "50%";
+            ul.style.marginTop = "10.5px";
+
+        }
+        mainList(); 
+
+        function addList() {
+           
+                
+            // the loop that creates the list
+            for (i = 0; i < 4; i += 1) {
+
+                var li = document.createElement("li");
+                var a = document.createElement("a");
+                listName = ["Home", "About", "Projects", "Contact"];
+                a.textContent = listName[i];
+                li.id = "tag";
+                //This where connect all the other pages too.
+                a.href = "";
+                ul.appendChild(li);
+                li.appendChild(a);
+
+            }   
+                       
+        }
+        addList();
+
+       
+
+       
+      
+       
+        
+
+
+
+       
+    </script>
+</body>
+</html>
