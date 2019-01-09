@@ -49,8 +49,16 @@
             margin-right: 50px;
             width: 300px;
         }
+        #image-3 {
+            /*border: 2px outset black;*/
+            float: left;
+            height: 300px;
+            margin-top: 50px;
+            margin-right: 50px;
+            width: 300px;
+        }
         #para1 {
-            /*border: 1px solid black;*/
+            border: 2px solid #FDFEFF;
             color: lightskyblue;
             font-family: 'Quicksand', sans-serif;
             font-size: 16px;
@@ -67,7 +75,7 @@
             }
 
         #para-2 {
-            /*border: 1px solid black;*/
+            border: 1px solid black;
             color: lightskyblue;
             font-family: 'Quicksand', sans-serif;
             font-size: 16px;
@@ -78,6 +86,22 @@
             text-indent: 50px;
             width: 900px;
             float: right;
+        }
+            #para-2:hover {
+                color: gray;
+            }
+        #para-3 {
+            border: 1px solid black;
+            color: lightskyblue;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 16px;
+            height: 300px;
+            margin-right: 5%;
+            margin-top: 50px;
+            text-align: justify;
+            text-indent: 50px;
+            width: 900px;
+            float: left;
         }
 
         /*CSS organized by selectors*/
@@ -185,7 +209,7 @@
                 var aboutMe = document.createElement("p");
                 aboutMe.id = "para1";
                 imgBody.appendChild(aboutMe);
-                aboutMe.innerText = "Sup guys! It's me Urihel again! I want to welcome you to About Me. This section is design specifically to illustrate \"why I got into coding ? \" and \"what I'm doing with it?\". In addition, I hope to show off my complete self-taught educational background mixed in with my College CS degree I'm hoping to complete soon at De Anza College.To start off, I've been self-teaching myself how to code for the past year now. What got me started, was just a simple suggestion from a family member to try coding if I really wanted to elevate my career like I wanted. Long story short I followed up on the Idea right away. What I didn't realize, was that following this idea would be so rewarding.The first thing I stumbled across, was this huge library of code documentation.Much of which I used to study with.I didn't play with code right off the bat but that cuz I didn't know what an IDE was or where do I even write js, jQuery, Java, C++ , or python code into.It actually took a few free online boot - camps to really help me create my environment, disipher code and translate it into something more easier like english.After Completing these bootcamps, and acquiring some now real basic understanding of what code is, I decided to take up Udemy.For those of you that don't know, Udemy is an app that is jam packed with educational resources. In here, I found some pretty sick mini boot-camps that centralized itself around web development. The subjects I got to study for web development  where: HTML5, CSS3, javaScript, JSON, jQuery, Boot-Strap, and python. I pretty much stuck to Udemy until now.  I have bought I still havent yet taken which are in java algorithms structures, Intro to java, Java for Andriod, advanced web development, flask and Django, python 3, A.I. and so many more.";
+                aboutMe.innerText = "Sup guys! It's me Urihel again! I want to welcome you to About Me. This section is designed specifically to illustrate 'why I got into coding?' and 'what I'm doing with it?'. In addition, I hope to show off my complete self-taught educational background mixed in with my college degree I'm now hoping to complete soon at De Anza College. To start off, I've been self-teaching myself how to code for the past year now. What got me started, was just a simple suggestion from a family member to try coding if I really wanted to elevate my career like I wanted. Long story short, I followed up on the Idea right away. What I didn't realize, was that following this idea would be so rewarding.The first thing I stumbled across, was this huge library of code documentation. Much of which I used to study with but not play with code right off the bat. That's becuase I didn't know what IDE's were and how to create files. It actually took me a few free online boot-camps to really help me create my environments, decipher code and translate It Into something more easier like english. After completing these bootcamps, and acquiring some now real basic understanding of what coding Is, I decided to take up Udemy. For those of you that don't know, Udemy is an app that is jam packed with educational resources. In here, I found some pretty sick mini boot-camps that centralized Itself around web development. Many of which elevated my skill in HTML5, CSS3, javaScript, JSON, jQuery, Boot-Strap, python. Since then i've relyed in Udemy and decided to pursue these courses to see what else is out there to discover: java algorithm structures, Intro to java, Java for Andriod, advanced web development, flask and Django, python 3, A.I, C++, C#, Anriod N and Oreo, and so many more. Before the year hit I began looking";
             }
             addAbout();
             //function that creates the second paragrpah and image 
@@ -193,12 +217,27 @@
                 var img2 = document.createElement("img");
                 imgBody2.appendChild(img2);
                 img2.id = "image-2";
+                img2.src = "https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/3667915/1820/1213/m1/fpnw/wm1/nmzbxenrvudgiuql2gecymrkchyewfixbljlnhzfmcee5aog6m0o0146ltenmjts-.jpg?1512111126&s=a0f29bafb9e6269216b2d15c0786bdb0";
                 var aboutMe2 = document.createElement("p");
                 imgBody2.appendChild(aboutMe2);
                 aboutMe2.id = "para-2";
-                aboutMe2.innerText = "Before the year hit I began looking into Udacity to take my next step into advancing and obtaining the Intro To Programming Nano Degree, Front-End Web Developer Nano Degree, and Full Stack Nano Degree. Further more, while I was in the middle of my 1 year into coding, I decided to change majors at De Anza so I could pursue something more techy.I ended up pursuing a Liberal Art: w / Business & CIS emphasis.Basically with this degree you are able to take all the computer science classes for programming minus the calculus and the CS degree title.For the fall 2018 quarter I finally got a chance to take some programming at De Anza College.I ended up taking Intro To Python which I was really successful in.In fact so successful I got an A in the class.Some of the stuff I got do in class was play with Code Labs, work on in -class python coding projects, take quizzes, and work in a final group coding project where we develop a technology whether game or app and show it off to the class. Some stuff that I am now really working towards is challenging myself by building small projects whether games, website, or apps.";
+                aboutMe2.innerText = "into Udacity to take my next step into advancing and obtaining some sort of legit certification to demonstrate to myself that I'm heading in the right direction.Some programs in interested in attending is the Intro To Programming Nano Degree, Front-End Web Developer Nano Degree, and Full Stack Nano Degree.  Further more, while I was in the middle of my 1 year into coding, I decided to change majors at De Anza so I could pursue something more techy.I ended up pursuing a Liberal Art: w / Business & CIS emphasis.Basically with this degree you are able to take all the computer science classes for programming minus the calculus and the CS degree title.For the fall 2018 quarter I finally got a chance to take some programming at De Anza College.I ended up taking Intro To Python which I was really successful in.In fact so successful I got an A in the class.Some of the stuff I got do in class was play with Code Labs, work on in -class python coding projects, take quizzes, and work in a final group coding project where we develop a technology whether game or app and show it off to the class. Some stuff that I am now really working towards is challenging myself by building small projects whether games, website, or apps.";
             }
             imageBody2();
+
+            function imageBody3() {
+                var img3 = document.createElement("img");
+                imgBody2.appendChild(img3);
+                img3.id = "image-3";
+                img3.src = "https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/3667915/1820/1213/m1/fpnw/wm1/nmzbxenrvudgiuql2gecymrkchyewfixbljlnhzfmcee5aog6m0o0146ltenmjts-.jpg?1512111126&s=a0f29bafb9e6269216b2d15c0786bdb0"
+                var aboutMe3 = document.createElement("p");
+                imgBody2.appendChild(aboutMe3);
+                aboutMe3.id = "para-3";
+                //aboutMe2.innertext = "";
+            }
+            imageBody3();
+
+
 
         </script>
 </body>
